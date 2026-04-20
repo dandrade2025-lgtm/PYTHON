@@ -1,0 +1,429 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "26097725-13d6-4615-99e0-f79824d40c8b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "8\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Voy a sumar dos números \n",
+    "x= 3 \n",
+    "y= 5\n",
+    "# Aqui es donde se suman los dos números\n",
+    "z=x+y \n",
+    "print(z)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "3d4388ba-f872-4080-9b7a-60b4a3d55fc7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "''' Esto es para escribir comentarios multilinea\n",
+    "Por ejemplo esto es lo que estoy haciendo ahora\n",
+    "'''\n",
+    "print(1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "b01a2208-ac64-4e2a-8119-6f2272314ab6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Un € vale 1.12 $'"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    " 'Un {} vale {} {}'.format('€', 1.12, '$')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "f04ccc6d-ad8f-4966-892b-28fccab9bd90",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Un $ vale 1.12 €'"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "'Un {2} vale {1} {0}'.format('€', 1.12, '$')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "dce1d15c-e317-4b5d-b6b5-97975e93f14f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Un € vale 1.12 $'"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "'Un {moneda1} vale {cambio} {moneda2}'.format(moneda1 = '€', cambio = 1.12, moneda2 = '$')\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "22b0be60-97bd-4c35-a0cc-660772c95426",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "ValueError",
+     "evalue": "invalid literal for int() with base 10: 'hola'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[31m---------------------------------------------------------------------------\u001b[39m",
+      "\u001b[31mValueError\u001b[39m                                Traceback (most recent call last)",
+      "\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[7]\u001b[39m\u001b[32m, line 3\u001b[39m\n\u001b[32m      1\u001b[39m \u001b[38;5;66;03m#Conversión de tipos de datos\u001b[39;00m\n\u001b[32m      2\u001b[39m int(\u001b[33m'12'\u001b[39m) \u001b[38;5;66;03m# Convierte una cadena a un valor entero\u001b[39;00m\n\u001b[32m----> \u001b[39m\u001b[32m3\u001b[39m int(\u001b[33m'hola'\u001b[39m) \u001b[38;5;66;03m#esta linea tiene que dar error\u001b[39;00m\n",
+      "\u001b[31mValueError\u001b[39m: invalid literal for int() with base 10: 'hola'"
+     ]
+    }
+   ],
+   "source": [
+    "#Conversión de tipos de datos\n",
+    "int('12') # Convierte una cadena a un valor entero\n",
+    "int('hola') #esta linea tiene que dar error"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "26be2ad5-b493-444b-8d09-e809012a2571",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'1234'"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Conversación a tipo Cadena con str(valor)\n",
+    "str('1234')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "d09eb89f-54e5-4df3-a6c0-27ea25f877dd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Que lenguaje te gusta más \n"
+     ]
+    }
+   ],
+   "source": [
+    "#Entrada por terminal: input()\n",
+    "strLenguaje = input ('Que lenguaje te gusta más')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "8f902c33-0089-4fed-aa7b-617b581235a6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "dame un número \n",
+      "dame otro número \n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Valor devuelto por input()    #la función input me devuelve siempre un string  #si pongo una cadena da error\n",
+    "x=input ('dame un número') \n",
+    "y= input ('dame otro número')\n",
+    "z= x + y\n",
+    "print(z)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "57f38ca7-ec4c-4ac1-96be-7dd9277121c3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "dame un número:  \n"
+     ]
+    },
+    {
+     "ename": "ValueError",
+     "evalue": "invalid literal for int() with base 10: ''",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[31m---------------------------------------------------------------------------\u001b[39m",
+      "\u001b[31mValueError\u001b[39m                                Traceback (most recent call last)",
+      "\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[11]\u001b[39m\u001b[32m, line 3\u001b[39m\n\u001b[32m      1\u001b[39m \u001b[38;5;66;03m#Corregir el ejercicio anterior\u001b[39;00m\n\u001b[32m      2\u001b[39m \u001b[38;5;66;03m#Lo convierto a entero para que lo sume como números\u001b[39;00m\n\u001b[32m----> \u001b[39m\u001b[32m3\u001b[39m x = int(input(\u001b[33m'dame un número: '\u001b[39m))\n\u001b[32m      4\u001b[39m y = int(input(\u001b[33m'dame otro número: '\u001b[39m))\n\u001b[32m      5\u001b[39m \n\u001b[32m      6\u001b[39m z = x + y\n",
+      "\u001b[31mValueError\u001b[39m: invalid literal for int() with base 10: ''"
+     ]
+    }
+   ],
+   "source": [
+    "#Corregir el ejercicio anterior\n",
+    "#Lo convierto a entero para que lo sume como números\n",
+    "x = int(input('dame un número: '))\n",
+    "y = int(input('dame otro número: '))\n",
+    "\n",
+    "z = x + y\n",
+    "print(z)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "7a2f5efb-bb41-4071-bf9a-c064e11c56ee",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "HolaDavid\n",
+      "Hola-David\n",
+      "Hola\n",
+      "Hola David\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Salida por terminal\n",
+    "name= 'David'\n",
+    "print('Hola', name, sep='') #con separador blanco\n",
+    "print('Hola', name, sep= '-') #con separador un guión\n",
+    "print('Hola')#solo uno\n",
+    "print('Hola', name) #dos valores. Entonces por defecto el separador es un espacio en blanco"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "511180c0-67c3-45f6-83e7-f431f471e14e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Dime tu edad 19\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "En edad de trabajar\n",
+      "Edad media 1\n"
+     ]
+    }
+   ],
+   "source": [
+    "# condicionales anidados\n",
+    "# Condicionales con if elif y else\n",
+    "edad = int(input('Dime tu edad'))\n",
+    "if(edad<18):\n",
+    "    print(\"Menor de edad\")\n",
+    "elif(edad >= 18 and  edad<65):\n",
+    "    print(\"En edad de trabajar\")\n",
+    "    if(edad>= 18 and edad<45):\n",
+    "        print(\"Edad media 1\")\n",
+    "    elif (edad>= 45 and edad <65):\n",
+    "        print(\"Edad media 2\")\n",
+    "else:\n",
+    "    print('Está jubiliado')\n",
+    "    print(\"Por fin\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "02edd4bf-410a-4f54-9cb0-a6ba2f4b7e3b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Introduce un número: \n"
+     ]
+    },
+    {
+     "ename": "ValueError",
+     "evalue": "invalid literal for int() with base 10: ''",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[31m---------------------------------------------------------------------------\u001b[39m",
+      "\u001b[31mValueError\u001b[39m                                Traceback (most recent call last)",
+      "\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[14]\u001b[39m\u001b[32m, line 5\u001b[39m\n\u001b[32m      1\u001b[39m \u001b[38;5;66;03m#While : bucle condicional\u001b[39;00m\n\u001b[32m      2\u001b[39m \u001b[38;5;66;03m#break (salir del bucle)\u001b[39;00m\n\u001b[32m      3\u001b[39m \u001b[38;5;66;03m# Pregunta al usuario por un número hasta que introduce 0.\u001b[39;00m\n\u001b[32m      4\u001b[39m \u001b[38;5;28;01mwhile\u001b[39;00m \u001b[38;5;28;01mTrue\u001b[39;00m:\n\u001b[32m----> \u001b[39m\u001b[32m5\u001b[39m     num= int(input(\u001b[33m'Introduce un número:'\u001b[39m))\n\u001b[32m      6\u001b[39m     \u001b[38;5;28;01mif\u001b[39;00m num ==\u001b[32m0\u001b[39m:\n\u001b[32m      7\u001b[39m         print(\u001b[33m'Vamos a salir porque ya se ha metido el 0'\u001b[39m)\n\u001b[32m      8\u001b[39m         \u001b[38;5;28;01mbreak\u001b[39;00m\n",
+      "\u001b[31mValueError\u001b[39m: invalid literal for int() with base 10: ''"
+     ]
+    }
+   ],
+   "source": [
+    "#While : bucle condicional\n",
+    "#break (salir del bucle)\n",
+    "# Pregunta al usuario por un número hasta que introduce 0.\n",
+    "while True:\n",
+    "    num= int(input('Introduce un número:'))\n",
+    "    if num ==0:\n",
+    "        print('Vamos a salir porque ya se ha metido el 0')\n",
+    "        break"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "84bb1ade-a665-4939-9857-a915c7d7d6a9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "i = 0\n",
+    "while(i<10): #pintar del 0 al 9\n",
+    "    print(i)\n",
+    "    i= i+1\n",
+    "    if i== 10:\n",
+    "        break\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "0a770720-0cb8-4be9-8905-80cf4a885e1b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "i = 0\n",
+    "while(i<10): #pintar del 0 al 9\n",
+    "    print(i)\n",
+    "    i= i+1\n",
+    "    if i> 4:\n",
+    "        break"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "94f3e927-bca2-428b-beb7-b86be8f33880",
+   "metadata": {},
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.13"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
